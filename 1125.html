@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嵌入 Bilibili 视频</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+            aspect-ratio: 16 / 9; /* 确保视频比例为16:9 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <iframe 
+            src="//player.bilibili.com/player.html?isOutside=true&aid=113401212699799&bvid=BV1uFSnYMEgP&cid=26547914271&p=1" 
+            scrolling="no" 
+            frameborder="no" 
+            allowfullscreen="true">
+        </iframe>
+    </div>
+</body>
+</html>
